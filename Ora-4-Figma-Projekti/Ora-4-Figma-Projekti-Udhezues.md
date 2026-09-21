@@ -49,9 +49,34 @@ Duhet të rikrijojmë këtë faqe (një faqe që përmban tekstin e një kënge)
 
 ---
 
+## 5. Kontrolli i detajeve
+
+Pasi struktura kryesore është vendosur, kontrollojmë çdo element një nga një kundrejt origjinalit:
+
+- A përputhen **ngjyrat** (kliko elementin origjinal, krahaso kodin hex)?
+- A përputhen **fontet** (familja, trashësia, madhësia)?
+- A përputhen **distancat** mes elementeve (spacing)?
+- A është **renditja** (layers) e saktë — a shfaqet çdo element mbi/nën atë çka duhet?
+
+> 💡 Kjo fazë e krahasimit detaj-pas-detaji quhet shpesh **"pixel-perfect"** — qëllimi është që dizajni jonë të mos dallohet nga origjinali.
+
+---
+
+## 6. Krahasimi final
+
+Vendos dizajnin tënd krah origjinalit (zoom out në Figma, ose hap dy tab-e) dhe krahasoi drejtpërdrejt, jo nga kujtesa. Shpesh dallimet e vogla (një font i ndryshëm, një ngjyrë pak më e errët) shihen vetëm kur i vendos njëri pranë tjetrit.
+
+---
+
+## 7. Nëse e përfundon
+
+Nëse e mbaron Lyrics Page-n para kohës, kalo tek projekti i dytë: `tiny.cc/elipticfigma` — përsërit të njëjtin proces (inspekto origjinalin, fillo nga struktura, shto detajet, krahaso).
+
+---
+
 ## Ushtrimi që bëmë në klasë
 
-Filluam rikrijimin e faqes Lyrics Page në Figma, duke inspektuar elementet e origjinalit një nga një dhe duke i vendosur në Frame-in tonë.
+Rikrijuam faqen Lyrics Page në Figma nga fillimi deri në fund: filluam duke inspektuar elementet e origjinalit një nga një dhe duke i vendosur në Frame-in tonë, dhe e mbyllëm duke kontrolluar detaj-pas-detaji (ngjyra, fonte, spacing, renditje) kundrejt origjinalit. Kush e mbaroi më herët, filloi projektin e dytë (Elliptic Figma).
 
 ---
 
@@ -62,6 +87,9 @@ Filluam rikrijimin e faqes Lyrics Page në Figma, duke inspektuar elementet e or
 2. Kliko mbi elementet origjinale për të lexuar vlerat e sakta (ngjyrë, madhësi, font)
 3. Fillo nga struktura e madhe, pastaj shto detajet
 4. Krahaso vazhdimisht me origjinalin, jo vetëm në fund
+5. Kontrollo çdo element kundrejt origjinalit: ngjyrë, font, distancë, renditje
+6. "Pixel-perfect" = dizajni jot nuk dallohet nga origjinali
+7. Nëse mbaron, kalo te projekti i dytë
 ```
 
 ---
@@ -70,9 +98,11 @@ Filluam rikrijimin e faqes Lyrics Page në Figma, duke inspektuar elementet e or
 
 - **Project Based Challenge** — sfidë ku rikrijon një projekt/dizajn ekzistues sa më saktë të mundshëm
 - **Inspect** (kontrollo elementin) — veprimi i klikimit mbi një element në Figma për të parë parametrat e tij të sakta
+- **Pixel-perfect** — kur një dizajn i rikrijuar përputhet saktësisht me origjinalin, deri në detaje të vogla
+- **Spacing** — distanca mes elementeve në një dizajn
 
 ---
 
 ## 🎯 Sfida jote (pikë ekstra)
 
-Nëse e përfundon Lyrics Page-n më shpejt se pjesa tjetër e klasës, kalo tek projekti i dytë: `tiny.cc/elipticfigma` (edhe ai me peshë 500 pikë).
+Krahaso projektin tënd (Lyrics Page) me origjinalin dhe gjej të paktën 3 dallime (sado të vogla) — një ngjyrë, një font, ose një distancë — dhe korrigjoi. Nëse e ke gati, kalo tek projekti i dytë: `tiny.cc/elipticfigma`.
