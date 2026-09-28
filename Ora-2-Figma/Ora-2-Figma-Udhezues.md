@@ -1,5 +1,3 @@
-> ⚠️ **Shënim:** Skeda origjinale e sllajdeve për këtë orë ("A2 - Figma Platforma.pptx") është shumë e madhe dhe teksti brenda saj nuk u nxor automatikisht, kështu që ky udhëzues është rindërtuar në bazë të asaj që zakonisht mësohet në hyrjen e Figma-s dhe të vazhdimit që e pamë në orën tjetër (Ora 3). Rishikoje dhe përshtate nëse diçka nuk përputhet me çka u mësua realisht në klasë.
-
 # Aktiviteti 2 — Figma Platforma
 ## Udhëzues
 

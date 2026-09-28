@@ -1,0 +1,291 @@
+/* ============================================================
+   jCoders lesson-guide PDF style
+   Fonts: Poppins (headings + body), DejaVu Sans Mono (code)
+   ============================================================ */
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/usr/share/fonts/truetype/google-fonts/Poppins-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('/usr/share/fonts/truetype/google-fonts/Poppins-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('/usr/share/fonts/truetype/google-fonts/Poppins-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('/usr/share/fonts/truetype/google-fonts/Poppins-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('/usr/share/fonts/truetype/google-fonts/Poppins-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+:root {
+  --ink: #1B1A26;
+  --body: #3A3947;
+  --muted: #7A7887;
+  --accent: #4A3AE0;
+  --accent-soft: #EFECFC;
+  --rule: #E4E2EC;
+  --rule-strong: #1B1A26;
+  --code-bg: #1E1B29;
+  --code-fg: #ECEAF5;
+  --code-muted: #8D8AA3;
+  --warn-bg: #FDF3E8;
+  --warn-border: #E7A94C;
+  --warn-ink: #7A4E11;
+  --tip-bg: #EFECFC;
+  --tip-border: #8B7AF0;
+  --tip-ink: #3B2E99;
+  --footer: #A6A4B3;
+}
+
+/* ---------------- Page setup ---------------- */
+
+@page {
+  size: A4;
+  margin: 3.4cm 2.15cm 3cm 2.15cm;
+  @bottom-center {
+    content: counter(page) " / " counter(pages);
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 9.5pt;
+    color: #A6A4B3;
+  }
+}
+
+/* Page 1 gets its own, tighter margins -- the cover block already
+   carries its own visual breathing room. Every page after it uses
+   the wider margin above, so continuation pages open and close with
+   real empty space instead of feeling cut off. */
+@page :first {
+  margin: 1.9cm 2.15cm 2.6cm 2.15cm;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 10.7pt;
+  line-height: 1.62;
+  color: var(--body);
+}
+
+/* ---------------- Cover block (top of page 1) ---------------- */
+
+.cover {
+  margin-bottom: 22px;
+}
+
+.cover .eyebrow {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 10.5pt;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 9px 0;
+}
+
+.cover h1 {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 27pt;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 0 0 11px 0;
+}
+
+.cover .subtitle {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 13pt;
+  color: var(--accent);
+  margin: 0 0 16px 0;
+}
+
+.cover .cover-rule {
+  border: none;
+  border-top: 2.6px solid var(--rule-strong);
+  margin: 0;
+}
+
+/* ---------------- Headings ---------------- */
+
+h2 {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 15.5pt;
+  color: var(--ink);
+  margin: 28px 0 7px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+}
+
+h3 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 12pt;
+  color: var(--ink);
+  margin: 18px 0 8px 0;
+}
+
+h2 + h3, h2 + p, h2 + ul, h2 + ol {
+  margin-top: 12px;
+}
+
+p {
+  margin: 0 0 11px 0;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* ---------------- Lists ---------------- */
+
+ul, ol {
+  margin: 0 0 14px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin: 0 0 6px 0;
+}
+
+li > ul, li > ol {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+/* ---------------- Section dividers (markdown '---') ---------------- */
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 20px 0;
+}
+
+/* ---------------- Code ---------------- */
+
+pre {
+  background: var(--code-bg);
+  color: var(--code-fg);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 4px 0 16px 0;
+  overflow: hidden;
+  page-break-inside: avoid;
+}
+
+pre code {
+  font-family: 'DejaVu Sans Mono', monospace;
+  font-size: 9pt;
+  line-height: 1.55;
+  color: var(--code-fg);
+  background: transparent;
+  padding: 0;
+  border: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* inline code (not inside a <pre> block) */
+p code, li code, h2 code, h3 code, td code {
+  font-family: 'DejaVu Sans Mono', monospace;
+  font-size: 9.3pt;
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 1.5px 6px;
+  border-radius: 5px;
+}
+
+/* ---------------- Blockquote callouts ---------------- */
+
+blockquote {
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 10.3pt;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+blockquote.tip {
+  background: var(--tip-bg);
+  border-left: 3.5px solid var(--tip-border);
+  color: var(--tip-ink);
+}
+
+blockquote.warn {
+  background: var(--warn-bg);
+  border-left: 3.5px solid var(--warn-border);
+  color: var(--warn-ink);
+}
+
+/* plain blockquote fallback, in case a callout carries no emoji marker */
+blockquote:not(.tip):not(.warn) {
+  background: #F4F3F8;
+  border-left: 3.5px solid #C7C4D6;
+  color: var(--body);
+}
+
+/* ---------------- Tables (rare, but keep them tidy) ---------------- */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 6px 0 16px 0;
+  font-size: 10pt;
+}
+
+th, td {
+  border: 1px solid var(--rule);
+  padding: 6px 9px;
+  text-align: left;
+}
+
+th {
+  background: #F7F6FB;
+  font-weight: 600;
+}

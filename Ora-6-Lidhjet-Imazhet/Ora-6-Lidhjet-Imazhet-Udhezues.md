@@ -1,5 +1,3 @@
-> ⚠️ **Shënim:** Skeda origjinale e sllajdeve "A9 - Lidhjet dhe Imazhet.pptx" nuk u gjet më në Drive (është shënuar për rikrijim në planin e ri të kurrikulës). Ky udhëzues është rindërtuar në bazë të përshkrimit ekzistues të aktivitetit (Void Elementet, Atributet, Imazhet, Linqet) dhe njohurive standarde të HTML-it. Rishikoje dhe përshtate nëse diçka nuk përputhet me çka u mësua realisht në klasë.
-
 # Aktiviteti 9 — Lidhjet dhe Imazhet
 ## Udhëzues
 
